@@ -1,0 +1,105 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=0.5in, top=0.4in, bottom=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% Font configuration: Using Noto Sans for a modern, clean SDE look
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
+
+% Custom Colors for subtle formatting
+\definecolor{techgray}{RGB}{60,60,60}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\setlist[itemize]{noitemsep, topsep=1pt, leftmargin=1.25em}
+\pagenumbering{gobble}
+
+\begin{document}
+
+%================ HEADER =================
+\begin{center}
+    {\huge \textbf{Kunal Avghade}} \\
+    \vspace{2pt}
+    \small
+    Pune, Maharashtra, India \ | \ +91 87881 58003 \ | \ \href{mailto:kunalavghade77@gmail.com}{kunalavghade77@gmail.com} \\
+    \href{https://linkedin.com/in/kunalavghade}{linkedin.com/in/kunalavghade} \ | \
+    \href{https://github.com/kunalavghade}{github.com/kunalavghade} \ | \
+    \href{https://kunalavghade.github.io}{kunalavghade.github.io}
+\end{center}
+
+%================ SUMMARY =================
+\section{Summary}
+Full Stack Software Engineer with \textbf{2.5+ years} of experience building high-scale distributed systems and cloud-native architectures. Specialist in Java/Spring Boot and Python/FastAPI, with a proven track record of delivering fault-tolerant platforms and managing \textbf{terabyte-scale} data migrations. AWS Certified Solutions Architect with strong algorithmic foundations (\textbf{Top 7\% LeetCode}).
+
+%================ SKILLS =================
+\section{Technical Skills}
+\textbf{Languages:} Java, Python, C++, JavaScript, TypeScript, SQL, HTML/CSS \\
+\textbf{Backend:} Spring Boot, NestJS, FastAPI, REST, gRPC, Temporal, Kafka, RabbitMQ, Hibernate \\
+\textbf{Frontend:} React.js, Next.js, Redux, JavaScript \\
+\textbf{Cloud/DevOps:} AWS (EC2, S3, Lambda, SQS), GCP, Docker, Kubernetes, Jenkins, ArgoCD \\
+\textbf{Databases:} PostgreSQL, Redis, MongoDB, Vector Databases (Pinecone, Milvus)
+
+%================ EXPERIENCE =================
+\section{Professional Experience}
+
+\textbf{Associate Software Engineer | Calfus Inc.} \hfill Jul 2023 -- Present \\
+\textit{Full Stack Development \& Cloud-Native Engineering} \hfill Pune, India
+\begin{itemize}
+    \item \textbf{Aetherion — AI Agent SDK \& Low-Code Platform} \\
+    {\small \textbf{Tech Stack:} Python, FastAPI, Temporal, Pydantic, PostgreSQL, Docker, AWS}
+    \begin{itemize}[label=$\circ$]
+        \item Developed a production-grade \textbf{Python SDK} for seamless integration with the Aetherion AI ecosystem, allowing external developers to build and deploy custom agents with 40\% less boilerplate code.
+        \item Architected the core backend for a \textbf{Low-Code Agent Builder}, utilizing \textbf{Temporal} to orchestrate complex, long-running agent workflows with native fault tolerance, retries, and state persistence.
+        \item Designed extensible prompt management and tool-calling interfaces, facilitating the rapid onboarding of new LLM providers and custom toolsets.
+    \end{itemize}
+
+    \item \textbf{NetApp Data Migrator — Enterprise Storage Solution} \\
+    {\small \textbf{Tech Stack:} Java, Spring Boot, NestJS, gRPC, Redis, RabbitMQ, Keycloak, PostgreSQL}
+    \begin{itemize}[label=$\circ$]
+        \item Engineered a high-performance migration engine capable of transferring \textbf{multi-terabyte} datasets between NAS (NFS/SMB) systems with 99.9\% data integrity across hybrid-cloud environments.
+        \item Optimized discovery agents using \textbf{gRPC} for low-latency communication and \textbf{multi-threaded processing}, achieving a 3x increase in file-scanning speed compared to legacy implementations.
+        \item Implemented distributed locking via \textbf{Redis} to manage concurrent migration tasks across worker nodes.
+    \end{itemize}
+
+    \item \textbf{Asurint — Background Verification Microservices} \\
+    {\small \textbf{Tech Stack:} Java, Spring Boot, GCP, Kafka, ArgoCD, Jenkins, PostgreSQL}
+    \begin{itemize}[label=$\circ$]
+        \item Built and maintained scalable microservices on \textbf{GCP} to automate background check workflows, processing millions of requests for criminal record indexing and education verification.
+        \item Orchestrated asynchronous inter-service communication using \textbf{Kafka}, decoupling heavy report generation logic from real-time data ingestion.
+    \end{itemize}
+\end{itemize}
+
+%================ KEY PROJECT =================
+\section{Key Project}
+
+\textbf{Vision-Based Intelligent Recipe Recommender} \\
+\textit{\small \textbf{Tech Stack:} Python, Django, YOLOv8, OpenCV, React, PostgreSQL, JWT} \hfill \textit{Jan 2023 -- May 2023}
+\begin{itemize}
+    \item Engineered a computer vision application that identifies food ingredients from user images using a custom-trained \textbf{YOLOv8} model with \textbf{92\% Mean Average Precision (mAP)}.
+    \item Developed a \textbf{Django} REST API to map detected objects to a database of 5000+ recipes using optimized SQL queries.
+    \item Implemented secure user authentication and ingredient history tracking using \textbf{JWT} and a React frontend.
+\end{itemize}
+
+%================ ACHIEVEMENTS =================
+\section{Achievements \& Certifications}
+\begin{itemize}
+    \item \textbf{LeetCode:} Ranked in the \textbf{Top 7\%} globally (Max Rating: 1900+); Solved \textbf{1000+} DSA problems. | \href{https://leetcode.com/u/kunalavghade/}{Profile}
+    \item \textbf{Drive Dynamo Award:} Won \textbf{3 years consecutively} (2023, 2024, 2025) for exceptional technical delivery and leading technology adaptation at Calfus Inc.
+    \item \textbf{AWS Certified Solutions Architect – Associate} \& \textbf{AWS Cloud Practitioner}.
+    \item \textbf{IBM AI Engineering Professional} \& \textbf{Stanford Machine Learning Specialization}.
+\end{itemize}
+
+%================ EDUCATION =================
+\section{Education}
+\textbf{Vishwakarma Institute of Information Technology} \hfill Pune, India \\
+B.Tech in Electronics \& Telecommunication (Software Systems Focus) \hfill 2020 -- 2023
+
+\end{document}
