@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+import os
 import subprocess
+import tempfile
 from pathlib import Path
 
 def compile_latex(tex_file: str):
@@ -14,10 +17,17 @@ def compile_latex(tex_file: str):
         tex_path.name
     ]
 
+    env = os.environ.copy()
+    if not env.get("TEXMFVAR"):
+        texmfvar = Path(tempfile.gettempdir()) / "texmf-var"
+        texmfvar.mkdir(parents=True, exist_ok=True)
+        env["TEXMFVAR"] = str(texmfvar)
+
     subprocess.run(
         cmd,
         cwd=tex_path.parent,
-        check=True
+        check=True,
+        env=env,
     )
 
     print("✅ PDF compiled successfully using LuaLaTeX")

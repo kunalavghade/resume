@@ -37,15 +37,14 @@
 
 %================ SUMMARY =================
 \section{Summary}
-Full Stack Software Engineer with \textbf{2.5+ years} of experience building high-scale distributed systems and cloud-native architectures. Specialist in Java/Spring Boot and Python/FastAPI, with a proven track record of delivering fault-tolerant platforms and managing \textbf{terabyte-scale} data migrations. AWS Certified Solutions Architect with strong algorithmic foundations (\textbf{Top 7\% LeetCode}).
-
+Full Stack Software Engineer with \textbf{3+ years} building cloud-native distributed systems. Specialist in \textbf{Java/Spring Boot, Python/FastAPI, and TypeScript/NestJS}, delivering fault-tolerant platforms and \textbf{petabyte-scale} migrations. AWS Certified Solutions Architect with strong algorithmic foundations.
 %================ SKILLS =================
 \section{Technical Skills}
-\textbf{Languages:} Java, Python, C++, JavaScript, TypeScript, SQL, HTML/CSS \\
-\textbf{Backend:} Spring Boot, NestJS, FastAPI, REST, gRPC, Temporal, Kafka, RabbitMQ, Hibernate \\
-\textbf{Frontend:} React.js, Next.js, Redux, JavaScript \\
-\textbf{Cloud/DevOps:} AWS (EC2, S3, Lambda, SQS), GCP, Docker, Kubernetes, Jenkins, ArgoCD \\
-\textbf{Databases:} PostgreSQL, Redis, MongoDB, Vector Databases (Pinecone, Milvus)
+\textbf{Languages:} Java, Python, TypeScript, JavaScript, C++, SQL \\
+\textbf{Frameworks:} Spring Boot, NestJS, FastAPI, React.js, Next.js \\
+\textbf{Distributed Systems:} Temporal, Kafka, RabbitMQ, gRPC, REST \\
+\textbf{Cloud/DevOps:} AWS, GCP, Docker, Kubernetes, Jenkins, ArgoCD \\
+\textbf{Databases:} PostgreSQL, Redis, MongoDB, Milvus
 
 %================ EXPERIENCE =================
 \section{Professional Experience}
@@ -53,27 +52,29 @@ Full Stack Software Engineer with \textbf{2.5+ years} of experience building hig
 \textbf{Associate Software Engineer | Calfus Inc.} \hfill Jul 2023 -- Present \\
 \textit{Full Stack Development \& Cloud-Native Engineering} \hfill Pune, India
 \begin{itemize}
-    \item \textbf{Aetherion — AI Agent SDK \& Low-Code Platform} \\
-    {\small \textbf{Tech Stack:} Python, FastAPI, Temporal, Pydantic, PostgreSQL, Docker, AWS}
+    \item \textbf{Aetherion — Agentic AI Platform} \\
+    {\small \textbf{Tech Stack:} Python, TypeScript, Java, FastAPI, Temporal, PostgreSQL, AWS, Docker, LLMs}
     \begin{itemize}[label=$\circ$]
-        \item Developed a production-grade \textbf{Python SDK} for seamless integration with the Aetherion AI ecosystem, allowing external developers to build and deploy custom agents with 40\% less boilerplate code.
-        \item Architected the core backend for a \textbf{Low-Code Agent Builder}, utilizing \textbf{Temporal} to orchestrate complex, long-running agent workflows with native fault tolerance, retries, and state persistence.
-        \item Designed extensible prompt management and tool-calling interfaces, facilitating the rapid onboarding of new LLM providers and custom toolsets.
+        \item Built production-grade \textbf{Python, TypeScript, and Java SDKs} enabling developers to author, deploy, and manage AI agents with standardized abstractions for memory, tools, and execution graphs.
+        \item Designed a conversational agent-generator that dynamically translates natural language requirements into executable workflows and prompt configurations using \textbf{LLMs}.
+        \item Architected distributed orchestration using \textbf{Temporal}, guaranteeing fault-tolerant execution of long-running agent workflows with automated state persistence and recovery mechanisms.
+        \item Optimized asynchronous task pipelines and tool invocation layers, lowering execution latency for concurrent, multi-tenant agent runs.
     \end{itemize}
 
-    \item \textbf{NetApp Data Migrator — Enterprise Storage Solution} \\
-    {\small \textbf{Tech Stack:} Java, Spring Boot, NestJS, gRPC, Redis, RabbitMQ, Keycloak, PostgreSQL}
+    \item \textbf{NetApp Data Migrator — ONTAP Storage Migration Platform} \\
+    {\small \textbf{Tech Stack:} Java, Spring Boot, NestJS, Temporal, gRPC, RabbitMQ, Redis, PostgreSQL, Keycloak, GCP, AWS, Azure, ONTAP}
     \begin{itemize}[label=$\circ$]
-        \item Engineered a high-performance migration engine capable of transferring \textbf{multi-terabyte} datasets between NAS (NFS/SMB) systems with 99.9\% data integrity across hybrid-cloud environments.
-        \item Optimized discovery agents using \textbf{gRPC} for low-latency communication and \textbf{multi-threaded processing}, achieving a 3x increase in file-scanning speed compared to legacy implementations.
-        \item Implemented distributed locking via \textbf{Redis} to manage concurrent migration tasks across worker nodes.
+        \item Designed a distributed migration platform for \textbf{NetApp ONTAP}, successfully transferring \textbf{1+ PB} and \textbf{1+ Billion} files of unstructured \textbf{NFS/SMB} data within \textbf{30 hours} with zero data loss.
+        \item Architected resumable, fault-tolerant migration workflows using \textbf{Temporal} across distributed worker clusters, supporting automated checkpointing and dead-letter recovery.
+        \item Implemented highly parallel discovery engines and low-latency task coordination using \textbf{gRPC, RabbitMQ, and Redis} for dynamic workload partitioning.
+        \item Integrated \textbf{Keycloak} RBAC and built real-time operational telemetry to monitor cluster throughput, file-level checksum validation, and active worker health.
     \end{itemize}
 
     \item \textbf{Asurint — Background Verification Microservices} \\
     {\small \textbf{Tech Stack:} Java, Spring Boot, GCP, Kafka, ArgoCD, Jenkins, PostgreSQL}
     \begin{itemize}[label=$\circ$]
-        \item Built and maintained scalable microservices on \textbf{GCP} to automate background check workflows, processing millions of requests for criminal record indexing and education verification.
-        \item Orchestrated asynchronous inter-service communication using \textbf{Kafka}, decoupling heavy report generation logic from real-time data ingestion.
+        \item Scaled \textbf{GCP}-based microservices automating background check workflows, processing millions of indexing and verification requests.
+        \item Decoupled heavy PDF report generation from data ingestion pipelines using \textbf{Apache Kafka} event-driven messaging.
     \end{itemize}
 \end{itemize}
 
@@ -83,16 +84,15 @@ Full Stack Software Engineer with \textbf{2.5+ years} of experience building hig
 \textbf{Vision-Based Intelligent Recipe Recommender} \\
 \textit{\small \textbf{Tech Stack:} Python, Django, YOLOv8, OpenCV, React, PostgreSQL, JWT} \hfill \textit{Jan 2023 -- May 2023}
 \begin{itemize}
-    \item Engineered a computer vision application that identifies food ingredients from user images using a custom-trained \textbf{YOLOv8} model with \textbf{92\% Mean Average Precision (mAP)}.
-    \item Developed a \textbf{Django} REST API to map detected objects to a database of 5000+ recipes using optimized SQL queries.
-    \item Implemented secure user authentication and ingredient history tracking using \textbf{JWT} and a React frontend.
+    \item Trained a custom \textbf{YOLOv8} model to detect food ingredients from raw images, achieving \textbf{92\% mAP}.
+    \item Built a secure \textbf{Django REST API} and \textbf{React.js} client with \textbf{JWT}, mapping detected items to 5,000+ recipes via optimized SQL joins.
 \end{itemize}
 
 %================ ACHIEVEMENTS =================
 \section{Achievements \& Certifications}
 \begin{itemize}
     \item \textbf{LeetCode:} Ranked in the \textbf{Top 7\%} globally (Max Rating: 1900+); Solved \textbf{1000+} DSA problems. | \href{https://leetcode.com/u/kunalavghade/}{Profile}
-    \item \textbf{Drive Dynamo Award:} Won \textbf{3 years consecutively} (2023, 2024, 2025) for exceptional technical delivery and leading technology adaptation at Calfus Inc.
+    \item \textbf{Drive Dynamo Award:} Won \textbf{3 consecutive years} (2023, 2024, 2025) for exceptional technical delivery and leading platform adoption at Calfus Inc.
     \item \textbf{AWS Certified Solutions Architect – Associate} \& \textbf{AWS Cloud Practitioner}.
     \item \textbf{IBM AI Engineering Professional} \& \textbf{Stanford Machine Learning Specialization}.
 \end{itemize}

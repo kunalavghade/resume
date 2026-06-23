@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.12.16)  18 DEC 2025 15:35
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.12.16)  23 JUN 2026 12:17
  restricted system commands enabled.
 **doc.tex
 (./doc.tex
@@ -8,8 +8,8 @@ Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
 collection.
-luaotfload | conf : Root cache directory is "/Users/kunal.avghade/Library/texliv
-e/2025basic/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/var/folders/_2/dgr04t7s07v2vqf_2gm
+0p2h40000gp/T/texmf-var/luatex-cache/generic/names".
 luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
 olved path "/usr/local/texlive/2025basic/texmf-dist/tex/luatex/luaotfload/fontlo
 ader-2023-12-28.lua".
@@ -20,8 +20,8 @@ Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "/Users/kunal.avghade/Library/texliv
-e/2025basic/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "/var/folders/_2/dgr04t7s07v2vqf_2gm
+0p2h40000gp/T/texmf-var/luatex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -44,8 +44,8 @@ Inserting `tracingstacklevels' in `input_level_string'. (/usr/local/texlive/202
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from /Users/kunal.avghade/Library/t
-exlive/2025basic/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
+luaotfload | db : Font names database loaded from /var/folders/_2/dgr04t7s07v2vq
+f_2gm0p2h40000gp/T/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 \c@part=\count194
 \c@section=\count195
 \c@subsection=\count196
@@ -367,8 +367,8 @@ ish.tex)
 Package babel Info: Importing data for english
 (babel)             from babel-en.ini. Reported on input line 12.
 Inserting `Babel.hyphenate' in `hyphenate'.
-luaotfload | cache : Lookup cache loaded from /Users/kunal.avghade/Library/texli
-ve/2025basic/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | cache : Lookup cache loaded from /var/folders/_2/dgr04t7s07v2vqf_2g
+m0p2h40000gp/T/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
 
 Package fontspec Info: 
 (fontspec)             Language 'English' not explicitly supported within font
@@ -577,15 +577,22 @@ Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
 Inserting `Babel.unset_atdir' in `pre_linebreak_filter'.
 Inserting `Babel.unset_atdir' in `hpack_filter'.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 59.
+(Font)              <7> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 59.
+(Font)              <5> on input line 58.
+
+Overfull \hbox (0.8554pt too wide) in paragraph at lines 60--61
+[]\TU/NotoSans(0)/m/n/10 Ar-chi-tected dis-tributed or-ches-tra-tion us-ing \TU
+/NotoSans(0)/b/n/10 Tem-po-ral\TU/NotoSans(0)/m/n/10 , guar-an-tee-ing fault-tol
+erant ex-e-cu-tion of long-running
+ []
+
 
 
 [1
 
-{/Users/kunal.avghade/Library/texlive/2025basic/texmf-var/fonts/map/pdftex/updma
-p/pdftex.map}] (./doc.aux)
+{/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./doc.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -596,22 +603,22 @@ Package rerunfilecheck Info: File `doc.out' has not changed.
 
 Here is how much of LuaTeX's memory you used:
  13617 strings out of 475506
- 195472,953878 words of node,token memory allocated
- 589 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 64 attribute, 53 glue_spec
-, 23 attribute_list, 1 write nodes
-   avail lists: 1:1,2:20323,3:583,4:165,5:729,6:101,7:14192,8:3,9:567,10:9,11:11
-40
+ 195475,953878 words of node,token memory allocated
+ 597 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 67 attribute, 53 glue_spec
+, 24 attribute_list, 1 write nodes
+   avail lists: 1:2,2:20320,3:601,4:171,5:795,6:104,7:14123,8:3,9:582,10:9,11:11
+37
  36440 multiletter control sequences out of 65536+600000
  51 fonts using 15047375 bytes
- 79i,5n,98p,447b,361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,5n,98p,395b,361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/kunal.avghade/Library/texmf/fonts/truetype/google/noto/NotoSans-BoldItal
 ic.ttf></Users/kunal.avghade/Library/texmf/fonts/truetype/google/noto/NotoSans-I
 talic.ttf></Users/kunal.avghade/Library/texmf/fonts/truetype/google/noto/NotoSan
 s-Regular.ttf></Users/kunal.avghade/Library/texmf/fonts/truetype/google/noto/Not
 oSans-Bold.ttf></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb>
-Output written on doc.pdf (1 page, 60666 bytes).
+Output written on doc.pdf (1 page, 60341 bytes).
 
 PDF statistics: 76 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
