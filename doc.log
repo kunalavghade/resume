@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.12.16)  23 JUN 2026 12:17
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.12.16)  23 JUL 2026 12:47
  restricted system commands enabled.
 **doc.tex
 (./doc.tex
@@ -592,7 +592,10 @@ erant ex-e-cu-tion of long-running
 [1
 
 {/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./doc.aux)
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.'
+[2] (./doc.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -603,25 +606,25 @@ Package rerunfilecheck Info: File `doc.out' has not changed.
 
 Here is how much of LuaTeX's memory you used:
  13617 strings out of 475506
- 195475,953878 words of node,token memory allocated
- 597 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 67 attribute, 53 glue_spec
-, 24 attribute_list, 1 write nodes
-   avail lists: 1:2,2:20320,3:601,4:171,5:795,6:104,7:14123,8:3,9:582,10:9,11:11
-37
+ 195473,953878 words of node,token memory allocated
+ 589 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 64 attribute, 53 glue_spec
+, 23 attribute_list, 1 write nodes
+   avail lists: 1:1,2:20933,3:578,4:167,5:802,6:100,7:14164,8:3,9:563,10:9,11:11
+43
  36440 multiletter control sequences out of 65536+600000
  51 fonts using 15047375 bytes
- 79i,5n,98p,395b,361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,5n,98p,415b,360s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/kunal.avghade/Library/texmf/fonts/truetype/google/noto/NotoSans-BoldItal
 ic.ttf></Users/kunal.avghade/Library/texmf/fonts/truetype/google/noto/NotoSans-I
 talic.ttf></Users/kunal.avghade/Library/texmf/fonts/truetype/google/noto/NotoSan
 s-Regular.ttf></Users/kunal.avghade/Library/texmf/fonts/truetype/google/noto/Not
 oSans-Bold.ttf></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb>
-Output written on doc.pdf (1 page, 60341 bytes).
+Output written on doc.pdf (2 pages, 60869 bytes).
 
-PDF statistics: 76 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+PDF statistics: 79 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 131072)
  49 words of extra memory for PDF output out of 10000 (max. 100000000)
 
