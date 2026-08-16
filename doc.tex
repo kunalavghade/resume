@@ -1,6 +1,6 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage[margin=0.5in, top=0.4in, bottom=0.4in]{geometry}
+\usepackage[margin=0.3in, top=0.25in, bottom=0.25in]{geometry}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -17,9 +17,9 @@
 
 % Section formatting
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titlespacing*{\section}{0pt}{2pt}{1pt}
 
-\setlist[itemize]{noitemsep, topsep=1pt, leftmargin=1.25em}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.1em}
 \pagenumbering{gobble}
 
 \begin{document}
@@ -27,7 +27,6 @@
 %================ HEADER =================
 \begin{center}
     {\huge \textbf{Kunal Avghade}} \\
-    \vspace{2pt}
     \small
     Pune, Maharashtra, India \ | \ +91 87881 58003 \ | \ \href{mailto:kunalavghade77@gmail.com}{kunalavghade77@gmail.com} \\
     \href{https://linkedin.com/in/kunalavghade}{linkedin.com/in/kunalavghade} \ | \
@@ -37,7 +36,7 @@
 
 %================ SUMMARY =================
 \section{Summary}
-Full Stack Software Engineer with \textbf{3+ years} building cloud-native distributed systems. Specialist in \textbf{Java/Spring Boot, Python/FastAPI, and TypeScript/NestJS}, delivering fault-tolerant platforms and \textbf{petabyte-scale} migrations. AWS Certified Solutions Architect with strong algorithmic foundations.
+Backend-focused Software Engineer with \textbf{3+ years} designing highly scalable, fault-tolerant distributed systems. Proven track record of architecting petabyte-scale migration platforms and AI-driven workflows. Specialist in \textbf{Java/Spring Boot, Python/FastAPI, and TypeScript/NestJS} with strong algorithmic foundations and a passion for system design.
 %================ SKILLS =================
 \section{Technical Skills}
 \textbf{Languages:} Java, Python, TypeScript, JavaScript, C++, SQL \\
@@ -53,28 +52,27 @@ Full Stack Software Engineer with \textbf{3+ years} building cloud-native distri
 \textit{Full Stack Development \& Cloud-Native Engineering} \hfill Pune, India
 \begin{itemize}
     \item \textbf{Aetherion — Agentic AI Platform} \\
-    {\small \textbf{Tech Stack:} Python, TypeScript, Java, FastAPI, Temporal, PostgreSQL, AWS, Docker, LLMs}
+    {\small \textbf{Tech Stack:} Python, TypeScript, Java, FastAPI, Temporal, PostgreSQL, AWS, Docker, GenAI, LLMs, RAG}
     \begin{itemize}[label=$\circ$]
-        \item Built production-grade \textbf{Python, TypeScript, and Java SDKs} enabling developers to author, deploy, and manage AI agents with standardized abstractions for memory, tools, and execution graphs.
-        \item Designed a conversational agent-generator that dynamically translates natural language requirements into executable workflows and prompt configurations using \textbf{LLMs}.
-        \item Architected distributed orchestration using \textbf{Temporal}, guaranteeing fault-tolerant execution of long-running agent workflows with automated state persistence and recovery mechanisms.
-        \item Optimized asynchronous task pipelines and tool invocation layers, lowering execution latency for concurrent, multi-tenant agent runs.
+        \item Developed three distinct interfaces for agent creation—\textbf{Chat, LCNC (Low-Code/No-Code), and SDKs (Python, TS, Java)}—accelerating integration time and dynamically translating natural language into executable workflows via \textbf{LLMs and RAG}, leveraging \textbf{Milvus} for vector retrieval.
+        \item Architected distributed orchestration using \textbf{Temporal}, guaranteeing fault-tolerant execution of long-running workflows and enabling the platform to seamlessly run \textbf{10,000+ agents in parallel}.
+        \item Optimized asynchronous task pipelines, tool invocation layers, and \textbf{LLM token consumption}, significantly lowering execution latency, scaling throughput for concurrent, multi-tenant agent runs, and \textbf{reducing operational costs by 50\%}.
     \end{itemize}
 
     \item \textbf{NetApp Data Migrator — ONTAP Storage Migration Platform} \\
-    {\small \textbf{Tech Stack:} Java, Spring Boot, NestJS, Temporal, gRPC, RabbitMQ, Redis, PostgreSQL, Keycloak, GCP, AWS, Azure, ONTAP}
+    {\small \textbf{Tech Stack:} TypeScript, NestJS, Java, Spring Boot, Temporal, gRPC, RabbitMQ, Redis, PostgreSQL, Keycloak, GCP, AWS, Azure, ONTAP}
     \begin{itemize}[label=$\circ$]
-        \item Designed a scalable distributed migration platform for \textbf{NetApp ONTAP} capable of handling migrations up to \textbf{1+ PB} and \textbf{1+ Billion} files across \textbf{NFS/SMB} environments. Successfully migrated \textbf{5+ TB} and \textbf{70+ Million} files of unstructured data within \textbf{30 hours} with zero data loss during performance validation.
+        \item Designed a scalable distributed migration platform for \textbf{NetApp ONTAP} capable of handling migrations up to \textbf{1+ PB} and \textbf{1+ Billion} files across \textbf{NFS/SMB} environments. Successfully migrated \textbf{100+ TB} and \textbf{90+ Million} files of unstructured data within \textbf{30 hours} with zero data loss during performance validation.
         \item Architected resumable, fault-tolerant migration workflows using \textbf{Temporal} across distributed worker clusters, supporting automated checkpointing and dead-letter recovery.
-        \item Implemented highly parallel discovery engines and low-latency task coordination using \textbf{gRPC, RabbitMQ, and Redis} for dynamic workload partitioning.
-        \item Integrated \textbf{Keycloak} RBAC and built real-time operational telemetry to monitor cluster throughput, file-level checksum validation, and active worker health.
+        \item Implemented highly parallel discovery engines and low-latency task coordination using \textbf{gRPC, RabbitMQ, and Redis} for dynamic workload partitioning, achieving \textbf{7x faster performance} compared to traditional Robocopy and rsync.
+        \item Integrated \textbf{Keycloak} RBAC and built real-time operational telemetry to monitor cluster throughput, file-level checksum validation, and active worker health, while generating optimal \textbf{Chain of Custody (CoC) reports} at runtime.
     \end{itemize}
 
     \item \textbf{Asurint — Background Verification Microservices} \\
     {\small \textbf{Tech Stack:} Java, Spring Boot, GCP, Kafka, ArgoCD, Jenkins, PostgreSQL}
     \begin{itemize}[label=$\circ$]
-        \item Scaled \textbf{GCP}-based microservices automating background check workflows, processing millions of indexing and verification requests.
-        \item Decoupled heavy PDF report generation from data ingestion pipelines using \textbf{Apache Kafka} event-driven messaging.
+        \item Scaled \textbf{GCP}-based microservices for automated background check workflows, processing \textbf{millions of monthly indexing and verification requests} while ensuring \textbf{99\% uptime}.
+        \item Decoupled heavy PDF report generation from data ingestion pipelines using \textbf{Apache Kafka} event-driven messaging, eliminating API timeouts and reducing report generation latency.
     \end{itemize}
 \end{itemize}
 
@@ -91,7 +89,7 @@ Full Stack Software Engineer with \textbf{3+ years} building cloud-native distri
 %================ ACHIEVEMENTS =================
 \section{Achievements \& Certifications}
 \begin{itemize}
-    \item \textbf{LeetCode:} Ranked in the \textbf{Top 7\%} globally (Max Rating: 1900+); Solved \textbf{1000+} DSA problems. | \href{https://leetcode.com/u/kunalavghade/}{Profile}
+    \item \textbf{Competitive Programming:} \textbf{LeetCode Guardian} (Max Rating: 2164, Top 1\% globally); Solved \textbf{1000+} DSA problems across platforms. | \href{https://leetcode.com/u/akunal/}{LeetCode} | \href{https://codeforces.com/profile/Kunalavghade}{Codeforces}
     \item \textbf{Drive Dynamo Award:} Won \textbf{3 consecutive years} (2023, 2024, 2025) for exceptional technical delivery and leading platform adoption at Calfus Inc.
     \item \textbf{AWS Certified Solutions Architect – Associate} \& \textbf{AWS Cloud Practitioner}.
     \item \textbf{IBM AI Engineering Professional} \& \textbf{Stanford Machine Learning Specialization}.
